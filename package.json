@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "rimraf ./bin",
     "build": "npm run clean && tsc",
+    "start": "ts-node ./src/index.ts",
     "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts"
   },
   "repository": {
