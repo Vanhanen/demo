@@ -1,3 +1,1 @@
-const secret = process.env.SECRET
-
-console.log(`the secret is "${secret}"`)
+console.log(`the secret is "${process.env.SECRET}"`)
