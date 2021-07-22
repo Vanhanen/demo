@@ -4,11 +4,12 @@ on:
   workflow_dispatch:
 
   push:
-    branches: ['release']
+    branches: ['release', 'main']
 
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  SECRET: ${{ secrets.TEST }}
 
 jobs:
   build-and-push-image:
